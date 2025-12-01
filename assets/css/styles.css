@@ -1,5 +1,5 @@
 :root {
-  --color-bg: #000000;
+  --color-bg: #070815;
   --color-bg-alt: #0f172a;
   --color-light: #f9fafb;
   --color-muted: #9ca3af;
@@ -392,57 +392,32 @@ body {
 }
 
 /* About */
-#sobre {
-  background-color: #FEFBEB; 
-  padding: 2rem 0; 
-  color: #0b1220;
-}
-.about.top {
+.about {
   display: grid;
-  gap: 2.5em;
-  text-align: justify;
-
+  gap: 2.5rem;
 }
 
-.about__img {
-  width: 100%;
-  max-width: 600px;
-  height: 300px;
-  object-fit:cover;
-  border-radius: 10px;
-  display: block;       
-  margin: 0 auto;
-  
+.about__mv {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.8rem;
 }
 
-.about__bottom p {
-  text-align: justify;
-}
-
-.about__box{
-  padding: 1.6rem 1.5rem;
-  border-radius: var(--radius-md);
-  background: radial-gradient(circle at top left, rgba(131, 59, 109, 0.527), rgba(173, 146, 170, 0.98));
-  border: 1px solid rgb(133, 34, 83);
-  color: #161212;
-}
-
-.about__box {
+.about__mv h3 {
   font-size: 1rem;
   margin-bottom: 0.35rem;
-  
 }
 
 .about__mv p {
-  color: var(#161212);
+  color: var(--color-muted);
   font-size: 0.95rem;
 }
 
 .about__values {
   padding: 1.6rem 1.5rem;
   border-radius: var(--radius-md);
-  background: radial-gradient(circle at top left, rgba(131, 59, 109, 0.527), rgba(173, 146, 170, 0.98));
-  border: 1px solid rgb(133, 34, 83);
+  background: radial-gradient(circle at top left, rgba(236, 72, 153, 0.18), rgba(15, 23, 42, 0.98));
+  border: 1px solid rgba(236, 72, 153, 0.45);
 }
 
 .about__values h3 {
@@ -453,12 +428,12 @@ body {
 .about__values ul {
   list-style: none;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   font-size: 0.9rem;
 }
 
 .about__values li + li {
-  margin-top: 0.4rem ;
+  margin-top: 0.4rem;
 }
 
 /* Beneficios */
@@ -826,4 +801,21 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
+.catalogo-hero {
+  text-align: center;
+}
+
+.catalogo-hero h1 {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  margin-bottom: 0.75rem;
+}
+
+.catalogo-hero p {
+  color: var(--color-muted);
+  max-width: 40rem;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+
 }
