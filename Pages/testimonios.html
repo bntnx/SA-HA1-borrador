@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voces que nos inspiran - Exportify</title>
+    
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/testimonios.css">
+</head>
+<body class="page-testimonios">
+
+    <div id="global-header"></div> 
+   <main class="main-content">
+    
+    <div class="container">
+
+        <div class="page-title-row">
+            <h1>Voces que nos inspiran</h1>
+            <button id="btnOpenModal" class="btn-create-post">Crear Publicación</button>
+        </div>
+
+        <div class="cards-grid" id="reviewsContainer">
+            
+            <article class="review-card">
+                <div class="card-img-placeholder">
+                    <div class="img-mockup" style="width:100%; height:100%; background:#e0e0e0;"></div>
+                </div>
+                <div class="stars">★★★★★</div>
+                <div class="dashed-line"></div>
+                <p class="review-excerpt">"Gracias a Exportify logré llevar mis artesanías a Europa de forma segura."</p>
+                <p class="review-author">Por: <strong>María G.</strong></p>
+                <button class="btn-view">Ver Publicación</button>
+            </article>
+
+        </div>
+
+    </div>
+    </main>
+    
+
+    <div class="modal-overlay" id="reviewModal">
+        <div class="modal-content">
+            <span class="modal-close" id="btnCloseModal">&times;</span>
+            <h2>Nueva Reseña</h2>
+            <form id="reviewForm">
+                <div class="form-group">
+                    <label for="inputName">Tu Nombre</label>
+                    <input type="text" id="inputName" required placeholder="Ej: Ana Pérez">
+                </div>
+                <div class="form-group">
+                    <label for="inputText">Tu Experiencia</label>
+                    <textarea id="inputText" rows="3" required placeholder="Cuéntanos tu historia..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="inputRating">Calificación</label>
+                    <select id="inputRating">
+                        <option value="5">★★★★★ (Excelente)</option>
+                        <option value="4">★★★★ (Muy bueno)</option>
+                        <option value="3">★★★ (Bueno)</option>
+                        <option value="2">★★ (Regular)</option>
+                        <option value="1">★ (Malo)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit">Publicar</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="global-footer"></div>
+    <script src="../assets/js/testimonios.js"></script>
+</body>
+</html>
